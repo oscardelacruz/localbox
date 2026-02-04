@@ -1,0 +1,2 @@
+streams:
+  testcam: "rtsp://localhost:8554/test"

@@ -1,0 +1,12 @@
+# Runtime data
+data/
+
+# Logs
+*.log
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Docker
+**/*~ 
