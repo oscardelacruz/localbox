@@ -9,4 +9,23 @@ services:
     volumes:
       - ../config/go2rtc.yaml:/config/go2rtc.yaml:ro
     restart: unless-stopped
+    networks:
+      - localbox
+
+  homeassistant:
+    image: homeassistant/home-assistant:stable
+    container_name: homeassistant
+    volumes:
+      - ../data/homeassistant:/config
+    environment:
+      - TZ=America/New_York
+    ports:
+      - "8123:8123"
+    restart: unless-stopped
+    networks:
+      - localbox
+
+networks:
+  localbox:
+    external: true
 

@@ -1,0 +1,22 @@
+  homeassistant:
+    image: homeassistant/home-assistant:stable
+    container_name: homeassistant
+    volumes:
+      - ../data/homeassistant:/config
+    environment:
+      - TZ=America/New_York
+    ports:
+      - "8123:8123"
+    restart: unless-stopped
+services:
+  go2rtc:
+    image: alexxit/go2rtc:latest
+    container_name: go2rtc
+    ports:
+      - "1984:1984"
+      - "8554:8554"
+      - "8555:8555"
+    volumes:
+      - ../config/go2rtc.yaml:/config/go2rtc.yaml:ro
+    restart: unless-stopped
+
