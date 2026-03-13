@@ -24,8 +24,36 @@ services:
     restart: unless-stopped
     networks:
       - localbox
+    depends_on:
+      - go2rtc
+
+  rtsp-test:
+    image: bluenviron/mediamtx:latest
+    container_name: rtsp-test
+    restart: unless-stopped
+    networks:
+      - localbox
+
+  rtsp-publisher:
+    image: jrottenberg/ffmpeg:6.1-alpine
+    container_name: rtsp-publisher
+    restart: unless-stopped
+    networks:
+      - localbox
+    depends_on:
+      - rtsp-test
+    command:
+      - -re
+      - -stream_loop
+      - "-1"
+      - -i
+      - https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4
+      - -c
+      - copy
+      - -f
+      - rtsp
+      - rtsp://rtsp-test:8554/test
 
 networks:
   localbox:
     external: true
-
