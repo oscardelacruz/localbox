@@ -1,10 +1,8 @@
 streams:
   testcam: rtsp://rtsp-test:8554/test
 
-  # Camera 1 placeholders
-  cam1_main: rtsp://USERNAME:PASSWORD@CAM1_IP:554/cam/realmonitor?channel=1&subtype=0
-  cam1_sub: rtsp://USERNAME:PASSWORD@CAM1_IP:554/cam/realmonitor?channel=1&subtype=1
-
+  cam1_main: rtsp://admin:Brianis2000!@10.0.0.211:554/cam/realmonitor?channel=1&subtype=0
+  cam1_sub: rtsp://admin:Brianis2000!@10.0.0.211:554/cam/realmonitor?channel=1&subtype=1
   # Camera 2 placeholders
   cam2_main: rtsp://USERNAME:PASSWORD@CAM2_IP:554/cam/realmonitor?channel=1&subtype=0
   cam2_sub: rtsp://USERNAME:PASSWORD@CAM2_IP:554/cam/realmonitor?channel=1&subtype=1
