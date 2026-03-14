@@ -18,7 +18,7 @@ services:
     volumes:
       - ../data/homeassistant:/config
     environment:
-      - TZ=America/New_York
+      - TZ=${TZ}
     ports:
       - "8123:8123"
     restart: unless-stopped
@@ -56,4 +56,5 @@ services:
 
 networks:
   localbox:
-    external: true
+    driver: bridge
+

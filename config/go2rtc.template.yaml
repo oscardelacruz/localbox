@@ -1,0 +1,20 @@
+streams:
+  testcam: rtsp://rtsp-test:8554/test
+
+  cam1_main: rtsp://${CAM1_USER}:${CAM1_PASS}@${CAM1_IP}:554/cam/realmonitor?channel=1&subtype=0
+  cam1_sub: rtsp://${CAM1_USER}:${CAM1_PASS}@${CAM1_IP}:554/cam/realmonitor?channel=1&subtype=1
+
+  # cam2_main: rtsp://${CAM2_USER}:${CAM2_PASS}@${CAM2_IP}:554/cam/realmonitor?channel=1&subtype=0
+  # cam2_sub: rtsp://${CAM2_USER}:${CAM2_PASS}@${CAM2_IP}:554/cam/realmonitor?channel=1&subtype=1
+
+  # cam3_main: rtsp://${CAM3_USER}:${CAM3_PASS}@${CAM3_IP}:554/cam/realmonitor?channel=1&subtype=0
+  # cam3_sub: rtsp://${CAM3_USER}:${CAM3_PASS}@${CAM3_IP}:554/cam/realmonitor?channel=1&subtype=1
+
+  # cam4_main: rtsp://${CAM4_USER}:${CAM4_PASS}@${CAM4_IP}:554/cam/realmonitor?channel=1&subtype=0
+  # cam4_sub: rtsp://${CAM4_USER}:${CAM4_PASS}@${CAM4_IP}:554/cam/realmonitor?channel=1&subtype=1
+
+  # cam5_main: rtsp://${CAM5_USER}:${CAM5_PASS}@${CAM5_IP}:554/cam/realmonitor?channel=1&subtype=0
+  # cam5_sub: rtsp://${CAM5_USER}:${CAM5_PASS}@${CAM5_IP}:554/cam/realmonitor?channel=1&subtype=1
+
+  # cam6_main: rtsp://${CAM6_USER}:${CAM6_PASS}@${CAM6_IP}:554/cam/realmonitor?channel=1&subtype=0
+  # cam6_sub: rtsp://${CAM6_USER}:${CAM6_PASS}@${CAM6_IP}:554/cam/realmonitor?channel=1&subtype=1

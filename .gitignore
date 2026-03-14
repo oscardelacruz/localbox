@@ -10,3 +10,13 @@ Thumbs.db
 
 # Docker
 **/*~ 
+.env
+config/go2rtc.yaml
+backup/
+data/homeassistant/home-assistant_v2.db
+data/homeassistant/home-assistant_v2.db-shm
+data/homeassistant/home-assistant_v2.db-wal
+data/homeassistant/home-assistant.log
+data/homeassistant/home-assistant.log.1
+data/homeassistant/home-assistant.log.fault
+data/homeassistant/.ha_run.lock

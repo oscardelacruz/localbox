@@ -1,9 +1,12 @@
 #!/bin/bash
 set -e
 
-cd "$(dirname "$0")/../compose"
-docker compose up -d
+cd "$(dirname "$0")/.."
+
+./scripts/start.sh
 
 echo ""
 echo "LocalBox is running"
-echo "Open: http://localhost:1984"
+echo "go2rtc: http://localhost:1984"
+echo "Home Assistant: http://localhost:8123"
+

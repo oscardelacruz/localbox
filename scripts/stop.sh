@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-cd "$(dirname "$0")/../compose"
-docker compose down
+cd "$(dirname "$0")/.."
 
-echo "LocalBox stopped"
+docker compose --env-file .env -f compose/docker-compose.yml down
+
